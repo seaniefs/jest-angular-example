@@ -32,7 +32,9 @@ describe('Dummy API', () => {
           value: 'hello'
         }
       }
-    }).then(done, error => done.fail(error));
+    }).then(() => {
+      done()
+    }, error => done.fail(error));
   });
 
   it('should answer 200', (done) => {
