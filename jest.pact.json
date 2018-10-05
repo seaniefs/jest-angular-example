@@ -24,12 +24,5 @@
   "moduleNameMapper": {
     "^.*\\.(jpg|jpeg|png|ico)$": "<rootDir>/src/jest/assetsTransformer.js",
     "@mobi/rwc-utils-ng-jslib": "<rootDir>/node_modules/@mobi/rwc-utils-ng-jslib/rwc-utils-ng-jslib.bundle.js",
-    "@plandialog/invalidite$": "<rootDir>/src/app/modules/invalidite/",
-    "@plandialog/salaire$": "<rootDir>/src/app/modules/salaire/",
-    "@plandialog/plan$": "<rootDir>/src/app/modules/plan/",
-    "@plandialog/domain$": "<rootDir>/src/app/domain/",
-    "@plandialog/shared$": "<rootDir>/src/app/shared/",
-    "@plandialog/core$": "<rootDir>/src/app/core/",
-    "@plandialog/(.*)$": "<rootDir>/src/app/$1"
   }
 }
