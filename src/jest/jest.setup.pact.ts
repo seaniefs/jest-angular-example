@@ -1,6 +1,6 @@
 import 'jest-preset-angular';
 import {Pact} from '@pact-foundation/pact';
-
+import './setupTestBed';
 
 declare var beforeAll: any;
 declare var afterAll: any;

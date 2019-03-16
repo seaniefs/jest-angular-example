@@ -5,12 +5,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod",
-    "test": "jest --config=jest.conf.json",
+    "build": "ng test & ng build --prod",
     "pact": "jest --runInBand --config=jest.pact.json",
-    "test:watch": "jest --watch",
-    "test:ci": "jest --runInBand",
-    "test:coverage": "jest --coverage",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
@@ -40,8 +36,6 @@
     "@angular/language-service": "^7.2.9",
     "@pact-foundation/pact": "^8.0.5",
     "@types/node": "~6.0.60",
-    "babel-jest": "^23.6.0",
-    "babel-preset-env": "^1.7.0",
     "codelyzer": "^4.0.1",
     "jest": "^23.0.0",
     "jest-sonar-reporter": "^2.0.0",
