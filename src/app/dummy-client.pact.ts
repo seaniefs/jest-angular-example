@@ -33,7 +33,7 @@ describe('Dummy API', () => {
         }
       }
     }).then(() => {
-      done()
+      done();
     }, error => done.fail(error));
   });
 
