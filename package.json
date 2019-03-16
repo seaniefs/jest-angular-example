@@ -5,8 +5,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng test & ng build --prod",
-    "pact": "jest --runInBand --config=jest.pact.json",
+    "build": "ng test & ng build --prod & ng run jest-angular-example:pact",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
