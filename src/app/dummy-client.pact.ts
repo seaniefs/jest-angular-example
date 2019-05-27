@@ -5,18 +5,18 @@ import {Pact} from '@pact-foundation/pact';
 
 
 describe('Dummy API', () => {
-  const provider : Pact = new Pact({
-    port: global.port,
+  const path = require('path');
+  const provider: Pact = new Pact({
+    port: 1234,
     log: path.resolve(process.cwd(), 'coverage', 'logs', 'mockserver-integration.log'),
     dir: path.resolve(process.cwd(), 'coverage', 'pacts'),
     spec: 2,
     cors: true,
-    logLevel: "debug",
+    logLevel: 'debug',
     pactfileWriteMode: 'update',
-    consumer: 'plandialog-frontend',
+    consumer: 'dummyClient',
     provider: 'MyProvider',
-  }); ;
-
+  });
   setupTestBed({
     imports: [HttpClientModule],
     providers: [DummyClient]
