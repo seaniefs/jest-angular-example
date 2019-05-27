@@ -57,22 +57,6 @@
             "browserTarget": "jest-angular-example:build"
           }
         },
-        "test": {
-          "builder": "@angular-builders/jest:run",
-          "options": {
-            "setupTestFrameworkScriptFile": "<rootDir>/src/jest/jest.setup.ts",
-            "configPath": "jest/jest.config.js",
-            "coverage": true
-          }
-        },
-        "pact": {
-          "builder": "@angular-builders/jest:run",
-          "options": {
-            "setupTestFrameworkScriptFile": "<rootDir>/src/jest/jest.setup.pact.ts",
-            "configPath": "jest/jest.config.pact.js",
-            "coverage": false
-          }
-        },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
