@@ -8,7 +8,7 @@
     "build": "npm run test & ng build --prod & ng run jest-angular-example:pact",
     "lint": "ng lint",
     "test": "jest --collectCoverage=true",
-    "pact:run": "jest --config jest.config.pact.js --collectCoverage=false --runInBand",
+    "pact:run": "jest --config jest.config.pact.js --collectCoverage=false --runInBand --detectOpenHandles",
     "pact:publish": "node ./publish.js",
     "e2e": "ng e2e"
   },
