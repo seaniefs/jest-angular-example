@@ -41,8 +41,11 @@ export class AngularConsumer {
         `body was: ${JSON.stringify(error.error)}`);
     }
     // return an observable with a user-facing error message
+    if (error.status === 404) {
+      return throwError('Status: 404 Error: No Data');
+    }
     return throwError(
-      'Something bad happened; please try again later.');
+      `Status: ${error.status} Error: ${error.error.error}`);
   }
 }
 
